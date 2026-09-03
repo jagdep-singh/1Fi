@@ -96,7 +96,7 @@ export default function ProductDetail({ product }: { product: ProductRaw }) {
                     </div>
                     <div className="text-right">
                       {toNumber(plan.interest_rate) === 0 ? (
-                        <span className="text-green-600 font-semibold">No Interest</span>
+                        <span className="text-green-600 font-semibold">0% Interest</span>
                       ) : (
                         <span className="text-gray-600">
                           {plan.interest_rate}% interest

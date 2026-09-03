@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { ProductRaw, VariantRaw, EmiPlanRaw } from "@/utils/format";
 import { toNumber, formatINR } from "@/utils/format";
+import Link from 'next/link'
 
 export default function ProductDetail({ product }: { product: ProductRaw }) {
   const defaultVariant =
@@ -28,11 +29,17 @@ export default function ProductDetail({ product }: { product: ProductRaw }) {
 
   return (
     <main className="max-w-4xl mx-auto p-6">
+      <Link 
+        href="/"
+        className="inline-block mb-6"
+      >
+        ← 
+      </Link>
       <div className="flex flex-col md:flex-row gap-8 mb-10">
         <img 
           src={selectedVariant.image_url} 
           alt={product.name}
-          className="w-full h-full md:w-1/2 h-80 object-contain bg-white rounded-lg border border-gray-100"
+          className="w-full h-full md:w-1/2 object-contain bg-white rounded-lg border border-gray-100"
         />
         <div className="flex-1">
           <h1 className="text-3xl font-bold mb-4">{product.name}</h1>

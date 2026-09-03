@@ -16,11 +16,11 @@ export default async function Home() {
             href={`/products/${product.slug}`}
             className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow bg-white"
           >
-            <div className="w-full h-48 flex items-center justify-center bg-white">
+            <div className="w-full aspect-square flex items-center justify-center bg-white overflow-hidden">
               <img
                 src={product.image_url}
                 alt={product.name}
-                className="max-w-full max-h-full object-contain"
+                className="w-full h-full object-contain p-4"
               />
             </div>
             <div className="p-4">

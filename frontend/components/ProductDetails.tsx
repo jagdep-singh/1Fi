@@ -57,7 +57,7 @@ export default function ProductDetail({ product }: { product: ProductRaw }) {
                       ? 'border-blue-600 bg-blue-50 text-blue-700' 
                       : 'border-gray-200 hover:border-gray-400'
                     }`}>
-                      {variant.storage} / {variant.color}
+                      {variant.storage} | {variant.color}
                 </button>
               ))}
             </div>

@@ -8,13 +8,13 @@ export default async function Home() {
 
   return (
     <main className="max-w-5xl mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-8 text-white">Products</h1>
+      <h1 className="text-3xl font-bold mb-8">Products</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {products.map((product) => (
           <Link 
             key={product.id}
             href={`/products/${product.slug}`}
-            className="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow bg-white"
+            className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow bg-white"
           >
             <div className="w-full h-48 flex items-center justify-center bg-white">
               <img

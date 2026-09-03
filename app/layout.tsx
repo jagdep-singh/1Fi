@@ -23,10 +23,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <link
-        href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap"
-        rel="stylesheet"
-      />
+       <head>
+          <link
+            href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap"
+            rel="stylesheet"
+          />
+      </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

@@ -1,4 +1,4 @@
-# 1Fi
+# 1Fi - submission by Jagdeep Singh
 
 A monorepo containing the 1Fi app — an EMI-based product storefront with a Next.js frontend and an Express + PostgreSQL backend.
 

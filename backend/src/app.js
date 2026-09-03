@@ -9,6 +9,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.status(200).json({ message: "submission by Jagdeep Singh" });
+});
+
 app.get("/api", (req, res) => {
   res.status(200).json({ message: "go to /api/products to fetch products" });
 });
@@ -20,7 +24,7 @@ app.get("/api/health", (req, res) => {
 app.use("/api/products" , productRoutes);
 
 app.use((req, res) => {
-  res.status(404).json({ error: `Route not found: ${req.method} ${req.originalUrl}` });
+  res.status(404).json({ message: `no routes for ${req.method} ${req.originalUrl}` });
 });
 
 

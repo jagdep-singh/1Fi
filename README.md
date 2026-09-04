@@ -8,6 +8,7 @@ A monorepo containing the 1Fi app — an EMI-based product storefront with a Nex
 
 **Backend (Render):** https://onefi-backend-513t.onrender.com/
 
+**Cron-job status :** https://qjqkmr3h.status.cron-job.org/
 
 ## Project Structure
 

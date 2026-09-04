@@ -2,15 +2,27 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1B1626;
+  --panel: #FFFFFF;
+  --muted: #6B6560;
+  --line: #E1DED6;
+  --emi-selection: #21b678;
+  --emi-selection-tint: #edfbef;
+  --green: #1F7A5C;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-panel: var(--panel);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-emi-selection: var(--emi-selection);
+  --color-emi-selection-tint: var(--emi-selection-tint);
+  --color-green: var(--green);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-satoshi : "Satoshi", sans-serif;
+  --font-satoshi: "Satoshi", sans-serif;
 }
 
 body {

@@ -8,7 +8,7 @@ A minimal Express server that serves product, variant, and EMI plan data for the
 
 ### Prerequisites
 - Node.js 18+
-- A PostgreSQL database (we use Supabase — connection string in `.env`)
+- A PostgreSQL database (i m use Supabase — connection string in `.env`)
 
 ### Install & Run
 
